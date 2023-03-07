@@ -6,6 +6,10 @@ fn main() {
     let x = five();
 
     println!("The value of x is: {x}");
+
+    let sum = plus_one(x);
+
+    println!("The value of x + 1 is: {sum}");
 }
 
 fn another_function(value: i32, unit_label: char) {
@@ -14,4 +18,8 @@ fn another_function(value: i32, unit_label: char) {
 
 fn five() -> i32 {
     5
+}
+
+fn plus_one(x: i32) -> i32 {
+    x + 1
 }
