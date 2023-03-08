@@ -22,4 +22,5 @@ fn five() -> i32 {
 
 fn plus_one(x: i32) -> i32 {
     x + 1
+    // if we put a ; in the end of the sentence, it doesnt return a value
 }
