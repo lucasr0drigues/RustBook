@@ -1,16 +1,25 @@
 fn main() {
-//     let mut counter = 0;
+    
+    loops();
+    loop_label();
+    whiles();
+}
 
-//     let result = loop{
-//         counter += 1;
+fn loops(){
+    let mut counter = 0;
 
-//         if counter == 10 {
-//             break counter * 2;
-//         }
-//     };
+    let result = loop{
+        counter += 1;
 
-//     println!("The result is {result}");
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
 
+    println!("The result is {result}");
+}
+
+fn loop_label(){
     let mut count = 0;
     'counting_up: loop {
         println!("count = {count}");
@@ -32,5 +41,16 @@ fn main() {
         count += 1;
     }
     println!("End count = {count}");
+}
 
+fn whiles(){
+    let mut number = 3;
+
+    while number != 0 {
+        println!("{number}!");
+
+        number -= 1;
+    }
+
+    println!("LIFTOFF!!!");
 }
