@@ -3,9 +3,14 @@ fn main() {
     loops();
     loop_label();
     whiles();
+    fors();
 }
 
 fn loops(){
+
+    println!("");
+    println!("loop");
+
     let mut counter = 0;
 
     let result = loop{
@@ -20,6 +25,10 @@ fn loops(){
 }
 
 fn loop_label(){
+
+    println!("");
+    println!("loop label");
+
     let mut count = 0;
     'counting_up: loop {
         println!("count = {count}");
@@ -44,6 +53,10 @@ fn loop_label(){
 }
 
 fn whiles(){
+
+    println!("");
+    println!("while");
+
     let mut number = 3;
 
     while number != 0 {
@@ -53,4 +66,16 @@ fn whiles(){
     }
 
     println!("LIFTOFF!!!");
+}
+
+fn fors(){
+
+    println!("");
+    println!("for");
+
+    let a = [10, 20, 30, 40, 50];
+
+    for element in a {
+        println!("the value is: {element}");
+    }
 }
