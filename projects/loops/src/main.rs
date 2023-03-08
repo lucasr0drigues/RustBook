@@ -4,6 +4,7 @@ fn main() {
     loop_label();
     whiles();
     fors();
+    for_with_reverse_range();
 }
 
 fn loops(){
@@ -78,4 +79,16 @@ fn fors(){
     for element in a {
         println!("the value is: {element}");
     }
+}
+
+fn for_with_reverse_range(){
+
+    println!("");
+    println!("for_with_reverse_range");
+
+    for number in (1..4).rev(){
+        println!("{number}");
+    }
+
+    println!("LIFTOFF!!!");
 }
